@@ -1,0 +1,19 @@
+{
+  "name": "agent-orchestrator",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/agent-orchestrator/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/agent-orchestrator",
+        "main": "packages/agent-orchestrator/src/index.ts",
+        "tsConfig": "packages/agent-orchestrator/tsconfig.lib.json",
+        "assets": ["packages/agent-orchestrator/*.md"]
+      }
+    }
+  }
+}
